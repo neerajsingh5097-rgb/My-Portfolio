@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Protfolio</title>
+    <!-- <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" /> -->
+
+    <!-- link for css properties -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link for home page css -->
+    <link rel="stylesheet" href="home.css" />
+    <!-- link for about page css -->
+    <link rel="stylesheet" href="about.css" />
+    <!-- link for services page css -->
+    <link rel="stylesheet" href="services.css" />
+    <!-- link for project page css -->
+     <link rel="stylesheet" href="project.css">
+     <!-- link for contact page css -->
+       <link rel="stylesheet" href="contac.css">
+    <!-- link for google icone using in my project  -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- this script  to font icone link  -->
+    <script
+      src="https://kit.fontawesome.com/101c3dac11.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- header for home page -->
+      <header>
+        <div class="brand-info">
+          <img src="/assets/logo.jpg" alt="" />
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="menu-area">
+          <input type="checkbox" name="" id="menu-toggle" hidden />
+          <label for="menu-toggle" class="menu-icon"
+            ><i class="bx bx-menu-wide"></i
+          ></label>
+          <label for="menu-toggle" id="overlay"></label>
+
+          <nav>
+            <a href="#" style="--i: 1" data-tab="home" class="navlink active"
+              >Home</a
+            >
+            <a href="#" style="--i: 2" data-tab="services" class="navlink"
+              >Services</a
+            >
+            <a href="#" style="--i: 2" data-tab="about" class="navlink"
+              >About</a
+            >
+            <a href="#" style="--i: 3" data-tab="projects" class="navlink"
+              >Projects</a
+            >
+            <a href="#" style="--i: 4" data-tab="contact" class="navlink"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </header>
+      <!--  home page content  -->
+      <section id="home" class="content active">
+        <div class="details">
+          <h2><span>Neeraj</span> Singh</h2>
+          <!-- this content use for line change to coder and learner -->
+          <h3>
+            I`m
+            <span id="typing-span"></span>
+          </h3>
+          <p>
+             A passionate Web Developer and B.Tech Computer
+            Science graduate who enjoy creating responsive, user-friendly, and
+            modern web applications using HTML, CSS, JavaScript, React.js, and
+            the Full stack. I love turning ideas into real-world projects and
+            continuously learning new technologies to improve my skills.
+          </p>
+          <div class="bottom">
+            <a
+              href="https://drive.google.com/file/d/18bEoJsy9hXS6u34myKbxOZU-Q8IMffGR/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              ><button class="btn">Download CV</button></a
+            >
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/neeraj-singh-314b77239">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a href="https://github.com/neerajsingh5097-rgb">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/scar_5097?stkn=a2g5dDd2OGZvMTVj"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <img
+            src="assets/MyPik.png"
+            alt="Profile Picture"
+            title="Profile Picture"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section id="services" class="content">
+        <h2>My <span>Services</span></h2>
+        <div class="service-list"></div>
+      </section>
+
+      <section id="about" class="content">
+        <div class="sidebar">
+          <h3>Why Hire Me ?</h3>
+          <p>
+            I’m a passionate Full-Stack Web Developer skilled in 
+            React.js, Next.js, Java, and responsive web development.
+              I’m eager to apply my skills to real-world projects, learn
+            new technologies, and build modern, user-friendly web applications.
+          </p>
+
+          <div class="tabs">
+            <!-- jab experience ho jab add kr dena  -->
+            <!-- <span data-section="experience" class="tab active">Experience</span> -->
+            <span data-section="education" class="tab">Education</span>
+            <span data-section="skills" class="tab">Skills</span>
+            <span data-section="about-me" class="tab">About Me</span>
+          </div>
+        </div>
+        <!--       Experience section jab experience ho jab add kr dena and about.js file me ja kr exprerience list opne kr do  -->
+        <!-- <aside id="experience" class="tab-content active">
+          <h2>My <span>Experience</span></h2>
+          <p>
+            Here are some of my professional experiences that showcase my
+            journey, skills, and dedication in web development and
+            collaboration.
+          </p>
+          <div class="experience-list"></div>
+        </aside> -->
+
+        <aside id="education" class="tab-content">
+          <h2>My <span>Education</span></h2>
+          <p>
+            Here are my educational qualifications that have built a strong
+            foundation in technology, problem-solving, and continuous learning
+            in web development.
+          </p>
+          <div class="education-list"></div>
+        </aside>
+
+        <aside id="skills" class="tab-content">
+          <h2>My <span>Skills</span></h2>
+          <p>
+            Here are the key skills I’ve developed through hands-on projects and
+            practical learning, helping me build modern, responsive, and
+            user-friendly web applications using the latest web technologies.
+          </p>
+          <div class="skill-list"></div>
+        </aside>
+
+        <aside id="about-me" class="tab-content">
+          <h2>About <span>Me</span></h2>
+          <p>
+            I'm a passionate developer dedicated to building impactful digital
+            experiences, blending creativity and code to solve real-world
+            problems efficiently and effectively.
+          </p>
+          <div class="my-info"></div>
+        </aside>
+      </section>
+
+      <section id="projects" class="content">
+        <div class="project">
+          <div class="carousel"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="content">
+        <div class="contact-info">
+          <h2>Let`s Work <span>Together.</span></h2>
+          <p>
+            Sure! Here's a 30-word contact paragraph for your website: "Have a
+            project in mind or just want to say hello? Feel free to reach out
+            anytime. I'm always open to discussing new ideas, collaborations, or
+            opportunities!
+          </p>
+          <div class="contact-media"></div>
+        </div>
+
+        <form action="#" id="contact-form">
+          <fieldset>
+            <legend>
+              <span>Contact</span>
+              Me !
+            </legend>
+
+            <div class="fields">
+              <div>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jogn@gmail.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="phone">Phone:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 XXXXXXXX59"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="message">Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  placeholder="Hi Coding Boy! "
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn" id="send-msg">
+              Send Message
+            </button>
+          </fieldset>
+        </form>
+      </section>
+
+
+    </div>
+
+    <script src="script.js" type="module" defer></script>
+    <script src="about.js" type="module" defer></script>
+    <script src="project.js" type="module" defer></script>
+    <script src="contact.js" type="module" defer></script>
+
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "_GvbS1VndvsSdrwba",
+            });
+        })();
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>
